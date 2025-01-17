@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.28)
-project(PROJECT NAME)
+project(PROJECT_NAME)
 
-#set(CMAKE_CXX_COMPILER "C:\\MinGW\\bin\\g++.exe")
-#set(CMAKE_C_COMPILER "C:\\MinGW\\bin\\gcc.exe")
+set(CMAKE_CXX_COMPILER "C:\\MinGW\\bin\\g++.exe")
+set(CMAKE_C_COMPILER "C:\\MinGW\\bin\\gcc.exe")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Debug)
@@ -16,7 +16,7 @@ set(BOOST_ROOT "C:\\MinGW")
 set(BOOST_INCLUDEDIR "${BOOST_ROOT}\\include")
 set(BOOST_LIBRARYDIR "${BOOST_ROOT}\\lib")
 
-add_subdirectory(library)
-add_subdirectory(program)
+add_subdirectory(Model)
+add_subdirectory(View)
 
 enable_testing()

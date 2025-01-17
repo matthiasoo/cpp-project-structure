@@ -35,11 +35,11 @@ This repository provides a skeleton for a C++ project with CMake configuration a
    ```
 7. Build the project:
    ```
-   mingw32-make.exe
+   make
    ```
 9. Run the tests:
    ```
-   ctest --verbose
+   make check
    ```
 
 Stay tuned for new updates!
